@@ -21,7 +21,7 @@
 			<% visited.forEach(product => { %>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<%- include('partials/product',{
-						...product,
+						...product.dataValues,
 						toThousand
 					}) %>
 				</div>
@@ -41,7 +41,7 @@
 			<% sale.forEach(product => { %>
 				<div class="col-12 col-sm-6 col-lg-3">
 					<%- include('partials/product',{
-						...product,
+						...product.dataValues,
 						toThousand
 					}) %>
 				</div>
